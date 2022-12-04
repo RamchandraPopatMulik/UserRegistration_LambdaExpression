@@ -25,8 +25,8 @@ namespace User_RegistrationProblem_Using_LambdaExpression
                     try
                     {
                         Console.WriteLine("Please Enter First Name: ");
-                        Regex1 regex1 = new Regex1();
-                        bool result = regex1.ValidateFirstName(Console.ReadLine(),Regex1.FirstName);
+                        Regex1 name = new Regex1();
+                        bool result = name.ValidateFirstName(Console.ReadLine());
                         Console.WriteLine(result);
                         if(result==false)
                         {
@@ -43,7 +43,7 @@ namespace User_RegistrationProblem_Using_LambdaExpression
                     {
                         Console.WriteLine("Please Enter Last Name: ");
                         Regex1 regex1 = new Regex1();
-                        bool result = regex1.ValidateLastName(Console.ReadLine(), Regex1.LastName);
+                        bool result = regex1.ValidateLastName(Console.ReadLine());
                         Console.WriteLine(result);
                         if (result == false)
                         {
@@ -60,7 +60,7 @@ namespace User_RegistrationProblem_Using_LambdaExpression
                     {
                         Console.WriteLine("Please Enter Email Id : ");
                         Regex1 regex1 = new Regex1();
-                        bool result = regex1.ValidateEmailId(Console.ReadLine(), Regex1.EmailId);
+                        bool result = regex1.ValidateEmailId(Console.ReadLine());
                         Console.WriteLine(result);
                         if (result == false)
                         {
@@ -77,7 +77,7 @@ namespace User_RegistrationProblem_Using_LambdaExpression
                     {
                         Console.WriteLine("Please Enter Mobile Number : ");
                         Regex1 regex1 = new Regex1();
-                        bool result = regex1.ValidateMobile(Console.ReadLine(), Regex1.MobileNumber);
+                        bool result = regex1.ValidateMobile(Console.ReadLine());
                         Console.WriteLine(result);
                         if (result == false)
                         {
@@ -94,7 +94,7 @@ namespace User_RegistrationProblem_Using_LambdaExpression
                     {
                         Console.WriteLine("Please Enter Password : ");
                         Regex1 regex1 = new Regex1();
-                        bool result = regex1.ValidatePassword(Console.ReadLine(), Regex1.Password);
+                        bool result = regex1.ValidatePassword(Console.ReadLine());
                         Console.WriteLine(result);
                         if (result == false)
                         {
