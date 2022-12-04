@@ -18,25 +18,10 @@ namespace User_RegistrationProblem_Using_LambdaExpression
 
 
         //Func<string, string, bool> Test = (x, y) => x>y;
-        public bool ValidateFirstName(string firstname)
-        {
-            return Regex.IsMatch(firstname, FirstName);
-        }
-        public bool ValidateLastName(string lastname)
-        {
-            return Regex.IsMatch(lastname, LastName);
-        }
-        public bool ValidateEmailId(string email)
-        {
-           return Regex.IsMatch(email, EmailId);
-        }
-        public bool ValidateMobile(string mobile)
-        {
-            return Regex.IsMatch(mobile, MobileNumber);
-        }
-        public bool ValidatePassword(string pass)
-        {
-            return Regex.IsMatch(pass, Password);
-        }
+        public Func<string, string, bool> ValidateFirstName = (firstname, FirstName) => Regex.IsMatch(firstname, FirstName);
+        public Func<string, string, bool> ValidateLastName = (lastname, LastName) => Regex.IsMatch(lastname, LastName);
+        public Func<string, string, bool> ValidateEmailId = (email, EmailId) => Regex.IsMatch(email, EmailId);
+        public Func<string, string, bool> ValidateMobileNumber = (phonenum, MobileNumber) => Regex.IsMatch(phonenum, MobileNumber);
+        public Func<string, string, bool> ValidatePassword = (password, Password) => Regex.IsMatch(password, Password);
     }
 }
